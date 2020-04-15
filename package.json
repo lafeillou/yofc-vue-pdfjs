@@ -1,6 +1,6 @@
 {
   "name": "yofc-vue-pdfjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "yofc-vue-pdf.js",
   "main": "src/index.vue",
   "scripts": {
@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/lafeillou/yofc-vue-pdfjs/issues"
   },
-  "homepage": "https://github.com/lafeillou/yofc-vue-pdfjs#readme"
+  "homepage": "https://github.com/lafeillou/yofc-vue-pdfjs#readme",
+  "dependencies": {
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "loader-utils": "^1.2.3",
+    "pdfjs-dist": "^2.1.266",
+    "raw-loader": "^3.1.0",
+    "vue-resize-sensor": "^2.0.0"
+  }
 }
