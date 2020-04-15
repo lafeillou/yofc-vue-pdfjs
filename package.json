@@ -2,7 +2,7 @@
   "name": "yofc-vue-pdfjs",
   "version": "1.0.0",
   "description": "yofc-vue-pdf.js",
-  "main": "index.vue",
+  "main": "src/index.vue",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
