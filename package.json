@@ -1,6 +1,6 @@
 {
   "name": "yofc-vue-pdfjs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "yofc-vue-pdf.js",
   "main": "src/index.vue",
   "scripts": {
