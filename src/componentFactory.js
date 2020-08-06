@@ -10,7 +10,7 @@ export default function(pdfjsWrapper) {
 		render: function(h) {
 			return h('span', {
 				attrs: {
-					style: 'position: relative; display: block'
+					style: 'position: absolute; display: block'
 				}
 			}, [
 				h('canvas', {
@@ -76,6 +76,7 @@ export default function(pdfjsWrapper) {
 					this.pdf.renderPage(this.rotate);
 
 				// this.$refs.annotationLayer.style.transform = 'scale('+resolutionScale+')';
+				this.$emit('resize',size);
 			},
 			print: function(dpi, pageList) {
 
