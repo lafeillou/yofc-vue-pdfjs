@@ -15,15 +15,15 @@ export default function(PDFJS) {
 		if ( typeof(src) === 'string' )
 		    // 经验证，合合文本ocr,出来的pdf文字图层不显示 就是这个问题
 			source = { url: src,
-				cMapUrl: 'pdfjs/web/cmaps/',
+				cMapUrl: '/pdfjs/web/cmaps/',
 				cMapPacked: true };
 		else if ( src instanceof Uint8Array )
 			// 下面这个写法有待验证
-			source = { data: src , cMapUrl: 'pdfjs/web/cmaps/',
+			source = { data: src , cMapUrl: '/pdfjs/web/cmaps/',
 			cMapPacked: true};
 		else if ( typeof(src) === 'object' && src !== null )
 		   // 下面这个写法有待验证
-			source = Object.assign({cMapUrl: 'pdfjs/web/cmaps/',
+			source = Object.assign({cMapUrl: '/pdfjs/web/cmaps/',
 			cMapPacked: true}, src);
 		else
 			throw new TypeError('invalid src type');
